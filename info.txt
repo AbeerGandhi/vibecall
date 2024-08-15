@@ -1,52 +1,73 @@
-pehle npx wali commands daali npx create-next-app@latest app_ka_name --typescript --tailwind --eslint
-phir yeh command daala npx shadcn-ui@latest init
-phir  utton banane ke liye yeh wala daala npx shadcn-ui@latest add button
-phir wahi button wale page pe jaake yeh copy past kiya code 
-        import { Button } from "@/components/ui/button"
+How i made this:
 
-        export default function Home() {
-          return (
-            <div>
-              <Button>Click me</Button>
-            </div>
-          )
-        }
+**Step 1: Initial Setup**
+1. **Create a New Next.js App**  
+   First, run the following command to create a new Next.js application with TypeScript, Tailwind CSS, and ESLint:  
+   `npx create-next-app@latest app_name --typescript --tailwind --eslint`
 
-es7+ extension download karna h 
-    isme rafce likho tih automatic banke aata h page ka writeup
+2. **Initialize Shadcn UI**  
+   To initialize Shadcn UI in your project, execute:  
+   `npx shadcn-ui@latest init`
 
+3. **Add a Button Component**  
+   To add a button component using Shadcn UI, run the following command:  
+   `npx shadcn-ui@latest add button`
 
-CLerk install kiya h user authentication and management ke liye h 
-pehle terminal pe daala npm install @clerk/nextjs
-Navigate to the Clerk Dashboard.
-In the navigation sidebar, select API Keys.
-In the Quick Copy section, copy your Clerk publishable and secret key.
-Paste your keys into your .env.local file.
-https://clerk.com/docs/quickstarts/nextjs
+4. **Implement the Button**  
+   In the button component's page, paste the following code to render a basic button:
+   ```javascript
+   import { Button } from "@/components/ui/button";
 
+   export default function Home() {
+     return (
+       <div>
+         <Button>Click me</Button>
+       </div>
+     );
+   }
+   ```
 
-stream karke app hai jisse video audio chat ho sakta hai 
-https://getstream.io/video/docs/react/
-ab yaha se install karna hnpm install @stream-io/video-react-sdk
-stream pe account banao  username:abeer_gandhi pass:#Eldorado2.0
-https://dashboard.getstream.io/organization/1237053/apps
-waha se api id aur key lena h 
+**Step 2: Enhance Development Experience**
+1. **Install ES7+ Extension**  
+   Download the ES7+ extension. Once installed, simply type `rafce`, and it will automatically generate the boilerplate code for a React component.
 
-api bhi chahiye toh us stream wale website me hi h 
-https://getstream.io/video/docs/api/#installation
-npm install @stream-io/node-sdk
+**Step 3: User Authentication with Clerk**
+1. **Install Clerk**  
+   Install Clerk for user authentication and management by running:  
+   `npm install @clerk/nextjs`
+   
+2. **Configure Clerk API Keys**  
+   - Navigate to the Clerk Dashboard.
+   - In the navigation sidebar, select **API Keys**.
+   - In the **Quick Copy** section, copy your Clerk publishable and secret key.
+   - Paste your keys into your `.env.local` file.  
+   [Clerk Documentation](https://clerk.com/docs/quickstarts/nextjs)
 
+**Step 4: Set Up Video and Audio Chat with Stream**
+1. **Install Stream SDK**  
+   To enable video and audio chat in your app, install the Stream SDK:  
+   `npm install @stream-io/video-react-sdk`
 
-  deploy karne ke liye  vercel karke app h nextjs projects ke liye best hai h 
-  deploy waha karo hojayega.
+2. **Set Up Stream Account**  
+   - Create an account on Stream: [Stream Dashboard](https://dashboard.getstream.io/organization/1237053/apps)
+   - Obtain your API ID and key from the dashboard.
 
-vercel pe jaake sabse pehle:
-add new project 
-import karo git ki repo
-phir environment variables me jaake saare .env file ke contents past karo
-phir deploy kar do 
-uske baad waha se domain name copy karo 
-setting me jaake public base url wale env ko edit karke paste karo isse tumhara local host hat jayega aur website ka name aajayega 
-phi redeploy karo aur visit site kar do toh new site aajayegi 
+3. **Install Stream API SDK**  
+   If you need the API, install the Stream API SDK:  
+   `npm install @stream-io/node-sdk`  
+   [Stream API Documentation](https://getstream.io/video/docs/api/#installation)
 
-use karo ab 
+**Step 5: Deploy with Vercel**
+1. **Deploy to Vercel**  
+   Vercel is ideal for deploying Next.js projects. Follow these steps:
+   - Go to Vercel and add a new project.
+   - Import your Git repository.
+   - In the environment variables section, paste all the contents of your `.env` file.
+   - Deploy the project.
+
+2. **Configure Domain Name**  
+   - After deployment, copy the domain name from Vercel.
+   - Edit the **public base URL** environment variable in the settings by pasting the domain name. This will replace the localhost with the actual website name.
+   - Redeploy the project and visit the site to see the new deployment.  
+
+You can now use your application.

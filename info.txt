@@ -1,0 +1,42 @@
+pehle npx wali commands daali npx create-next-app@latest app_ka_name --typescript --tailwind --eslint
+phir yeh command daala npx shadcn-ui@latest init
+phir  utton banane ke liye yeh wala daala npx shadcn-ui@latest add button
+phir wahi button wale page pe jaake yeh copy past kiya code 
+        import { Button } from "@/components/ui/button"
+
+        export default function Home() {
+          return (
+            <div>
+              <Button>Click me</Button>
+            </div>
+          )
+        }
+
+es7+ extension download karna h 
+    isme rafce likho tih automatic banke aata h page ka writeup
+
+
+CLerk install kiya h user authentication and management ke liye h 
+pehle terminal pe daala npm install @clerk/nextjs
+Navigate to the Clerk Dashboard.
+In the navigation sidebar, select API Keys.
+In the Quick Copy section, copy your Clerk publishable and secret key.
+Paste your keys into your .env.local file.
+https://clerk.com/docs/quickstarts/nextjs
+
+
+stream karke app hai jisse video audio chat ho sakta hai 
+https://getstream.io/video/docs/react/
+ab yaha se install karna hnpm install @stream-io/video-react-sdk
+stream pe account banao  username:abeer_gandhi pass:#Eldorado2.0
+https://dashboard.getstream.io/organization/1237053/apps
+waha se api id aur key lena h 
+
+api bhi chahiye toh us stream wale website me hi h 
+https://getstream.io/video/docs/api/#installation
+npm install @stream-io/node-sdk
+
+
+  deploy karne ke liye  vercel karke app h nextjs projects ke liye best hai h 
+  deploy waha karo hojayega.
+    

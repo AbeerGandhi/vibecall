@@ -39,4 +39,14 @@ npm install @stream-io/node-sdk
 
   deploy karne ke liye  vercel karke app h nextjs projects ke liye best hai h 
   deploy waha karo hojayega.
-    
+
+vercel pe jaake sabse pehle:
+add new project 
+import karo git ki repo
+phir environment variables me jaake saare .env file ke contents past karo
+phir deploy kar do 
+uske baad waha se domain name copy karo 
+setting me jaake public base url wale env ko edit karke paste karo isse tumhara local host hat jayega aur website ka name aajayega 
+phi redeploy karo aur visit site kar do toh new site aajayegi 
+
+use karo ab 
